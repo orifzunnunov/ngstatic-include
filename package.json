@@ -1,0 +1,18 @@
+{
+  "name": "static-include",
+  "version": "1.0.0",
+  "description": "This is a test project to download templates (replaces ng-include)",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "UI",
+    "libs",
+    "through",
+    "NPM"
+  ],
+  "author": "Orifhon Zunnunov",
+  "dependencies": {
+    "angular": "^1.4"
+  }
+}

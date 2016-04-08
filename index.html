@@ -1,0 +1,19 @@
+<html ng-app="staticTemplate">
+
+<head>
+    <title>Static template sample</title>
+</head>
+
+<body ng-controller="Controller">
+    <span ng-bind="text"></span><br/>
+    <span>{{text}}</span>
+
+    <div static-include="app/template/main.html"></div>
+    
+    <script src="node_modules/angular/angular.js"></script>    
+    <script src="app/app.js"></script>
+    <script src="app/controller.js"></script>
+    <script src="app/directive.js"></script>
+</body>
+
+</html>
