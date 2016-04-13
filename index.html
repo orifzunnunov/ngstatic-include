@@ -2,15 +2,54 @@
 
 <head>
     <title>Static template sample</title>
+    <style>
+        .parent_div_1,
+        .parent_div_2{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            margin-right: 10px;
+            float: left;
+        }
+        #first_column{
+            width: 200px;
+            height: auto;
+            border: 1px solid blacl;
+            float: left
+        }
+        #second_column{
+            width: 200px;
+            height: auto;
+            border: 1px solid blacl;
+            float: left
+        }
+    </style>
 </head>
 
 <body ng-controller="Controller">
-    <span ng-bind="text"></span><br/>
+    <span ng-bind="text"></span>
+    <br/>
     <span>{{text}}</span>
 
     <div static-include="app/template/main.html"></div>
-    
-    <script src="node_modules/angular/angular.js"></script>    
+    <pane>Custom Text
+        <pane>Custom Text 2</pane>
+    </pane>
+
+    <br/>
+
+    <div id="first_column">
+        <div ng-repeat="obj in myList">
+            <div class='parent_div_1' ng-if="$index%2==0">{{obj.name}}</div>
+        </div>
+    </div>
+    <div id="second_column">
+        <div ng-repeat="obj in myList">
+            <div class='parent_div_2' ng-if="$index%2==1">{{obj.name}}</div>
+        </div>
+    </div>
+
+    <script src="node_modules/angular/angular.js"></script>
     <script src="app/app.js"></script>
     <script src="app/controller.js"></script>
     <script src="app/directive.js"></script>

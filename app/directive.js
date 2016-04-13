@@ -8,4 +8,11 @@ angular.module("staticTemplate").directive('staticInclude', function ($http, $te
             $compile(contents)(scope);
         });
     };
-});
+}).directive('pane', function(){
+      return {
+        restrict: 'E',
+        transclude:true,
+        scope: { title:'@' },
+        template: '<div>TemplateText</div> <ng-transclude></ng-transclude>'
+      };
+  });
