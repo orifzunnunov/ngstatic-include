@@ -1,22 +1,26 @@
 [
     {
         "seq":0,
-        "name":"Element 0"
+        "name":"Group 0"
     },
     {
         "seq":1,
-        "name":"Element 1"
+        "name":"Group 1"
     },
     {
         "seq":2,
-        "name":"Element 2"
+        "name":"Group 2"
     },
     {
         "seq":3,
-        "name":"Element 3"
+        "name":"Group 3"
     },
     {
         "seq":4,
-        "name":"Element 4"
+        "name":"Group 4"
+    },
+    {
+        "seq":6,
+        "name":"Group 6"
     }
 ]

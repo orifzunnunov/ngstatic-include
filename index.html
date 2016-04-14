@@ -14,19 +14,20 @@
         #first_column{
             width: 200px;
             height: auto;
-            border: 1px solid blacl;
+            border: 1px solid black;
             float: left
         }
         #second_column{
             width: 200px;
             height: auto;
-            border: 1px solid blacl;
+            border: 1px solid black;
             float: left
         }
     </style>
 </head>
 
 <body ng-controller="Controller">
+<!--
     <span ng-bind="text"></span>
     <br/>
     <span>{{text}}</span>
@@ -37,15 +38,16 @@
     </pane>
 
     <br/>
+-->
 
     <div id="first_column">
         <div ng-repeat="obj in myList">
-            <div class='parent_div_1' ng-if="$index%2==0">{{obj.name}}</div>
+            <div class='parent_div_1' ng-if="obj.seq%2==0">{{obj.name}}</div>
         </div>
     </div>
     <div id="second_column">
         <div ng-repeat="obj in myList">
-            <div class='parent_div_2' ng-if="$index%2==1">{{obj.name}}</div>
+            <div class='parent_div_2' ng-if="obj.seq%2==1">{{obj.name}}</div>
         </div>
     </div>
 
